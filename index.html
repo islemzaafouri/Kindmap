@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindMap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+</head>
+<body> 
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <h1 class="logo"><a href="index.html"><i class="fas fa-map"></i>KindMap</a></h1>
+
+            <!--hidden checkbox for mobile menu -->
+            <input type="checkbox" id="menu-toggle" hidden>
+            <!--hamburger icon -->
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/addpost.html">Share kindness</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h2>Tiny moments of Grace. One beautiful,beating heart at a time.</h2>
+            <p>
+                The best and most beautiful things in the world cannot be seen , nor touched , but are felt in the heart. - Helen Keller
+            </p>
+            <a href="pages/login.html" class="btn-primary">Be kind</a>
+        </div>
+    
+
+    <section class="map-section">
+        <h2 class="section-title">Kindness Around the World</h2>
+        <p class="section-description">
+            Every heart on this map tells a story of an empathic heart.
+        </p>
+        <div id="map">
+            <!-- Map will be rendered here by Leaflet.js -->
+        </div>
+        <a href="pages/addpost.html" class="btn-primary">Share your kindness</a>
+    </section>
+
+    <section class="about-preview">
+        <h2>Why KindMap Exists</h2>
+        <div class="reasons">
+            <article class="reason">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Inspire Kindness</h3>
+                <p>We believe that sharing stories of kindness can inspire others to act with compassion and empathy.</p>
+            </article>
+            <article class="reason">
+                <i class="fas fa-globe"></i>
+                <h3>Connect the World</h3>
+                <p>KindMap connects people across the globe through shared acts of kindness.</p>
+            </article>
+            <article class="reason">
+                <i class="fas fa-heart"></i>
+                <h3>Celebrate Empathy</h3>
+                <p>We celebrate the beauty of empathy and the impact it has on our world.</p>
+            </article>
+        </div>
+        <a href="pages/about.html" class="btn-primary">Learn more</a>
+    </section>
+    </main>
+
+    <footer>
+        <p>Made with love for people who believe small actions can change the world.</p>
+        <p class="footer-small">© 2026 KindMap</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+     
+
+    
+
+        

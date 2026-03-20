@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindMap</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body> 
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <h1 class="logo"><a href="../index.html"><i class="fas fa-map"></i>KindMap</a></h1>
+
+            <!--hidden checkbox for mobile menu -->
+            <input type="checkbox" id="menu-toggle" hidden>
+            <!--hamburger icon -->
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="addpost.html">Share kindness</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="addpost-hero">
+            <h2>Share your story of kindness and inspire others to make the world a better place, one act of compassion at a time.</h2>
+        </section>
+        <section class="post-container">
+            <h2 id="post-title">Make a post</h2>
+
+            <form id="addpost-form" action="#" method="post" class="form">
+                <!--title -->
+                <div class="input-group">
+                    <label for="post-title">Title</label>
+                    <input type="text" id="post-title" required>
+                </div>
+                <!--description -->
+                <div class="input-group">
+                    <label for="post-description">Description</label>
+                    <textarea id="post-description" rows="5" required></textarea>
+                </div>
+                <!--location -->
+                <div class="input-group">
+                    <label for="post-location">Location</label>
+                    <input type="text" id="post-location" required>
+                </div>
+                <!--submit button -->
+                <button type="submit" class="btn-primary">Share Kindness</button>
+            </form>
+        </section>
+
+        <div id="posts"></div>
+
+        </main>
+
+
+    <footer>
+        <p>Made with love for people who believe small actions can change the world.</p>
+        <p class="footer-small">© 2026 KindMap</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

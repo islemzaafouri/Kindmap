@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindMap</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body> 
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <h1 class="logo"><a href="../index.html"><i class="fas fa-map"></i>KindMap</a></h1>
+
+            <!--hidden checkbox for mobile menu -->
+            <input type="checkbox" id="menu-toggle" hidden>
+            <!--hamburger icon -->
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="addpost.html">Share kindness</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <section class="hero">
+            <h1>kindmap</h1>
+            <p>
+                welcome to kindmap,it's not just a platform , its a little slice of hope and kindness in a world that can sometimes feel heavy and overwhelming.
+                its a big hug in the form of a website, a place where you can share your stories of kindness and connect with others who believe in the power of empathy and compassion.
+            </p>
+            <img src="../assets/images/laugh.jpg" alt="kindness image" class="hero-image">
+        </section>
+        <div class="abt">
+            <article class="vision">
+                <h2>Our Vision</h2>
+                <p>
+                    KindMap is a space where compassion shines. From quiet smiles to simple acts of help,
+                    every story of kindness reminds us that the world is full of warmth, one heart at a time.
+                </p>
+            </article>
+            <article class="mission">
+                <h2>Our Mission</h2>
+                <p>
+                    Our mission is to inspire kindness and empathy by sharing stories of compassion from around the world.
+                    We believe that even the smallest acts of kindness can create a ripple effect, making the world 
+                    a better place for everyone.
+                </p>
+            </article>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Made with love for people who believe small actions can change the world.</p>
+        <p class="footer-small">© 2026 KindMap</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>     
