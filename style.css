@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
 }
 
@@ -137,7 +138,7 @@ a {
 }
 .hero ,.map-section, .about-preview{
 text-align:center;
-padding:80px 20px;
+padding:40px 20px;
 max-width:800px;
 margin:auto;
 }
