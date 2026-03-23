@@ -107,11 +107,12 @@ body {
     border-radius: 5px;
 }
 .btn-primary {
+    display: inline-block;
     background:linear-gradient(to right, #FA739D,#FFAAB8) ;
     color: #FFEAF1;
     padding: 12px 28px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .btn-primary:hover {
     opacity: 0.9;
@@ -290,6 +291,7 @@ margin:auto;
     height: 400px;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
