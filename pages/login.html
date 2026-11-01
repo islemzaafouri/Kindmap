@@ -43,7 +43,7 @@
                 <!--name -->
                 <div class="input-group hidden">
                     <label for="auth-name">Full Name</label>
-                    <input type="text" id="auth-name" required>
+                    <input type="text" id="auth-name" >
                 </div>
                 <!--email -->
                 <div class="input-group">
@@ -58,7 +58,7 @@
                 <!--confirmation-password -->
                 <div class="input-group hidden">
                     <label for="auth-confirm-password">Confirm Password</label>
-                    <input type="password" id="auth-confirm-password" required>
+                    <input type="password" id="auth-confirm-password">
                 </div>
                 <!--submit -->
                 <button type="submit" id="auth-submit" class="btn-primary">Sign In</button>
@@ -82,7 +82,9 @@
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </footer>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabaseClient.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
 </body>
 </html>     

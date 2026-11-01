@@ -296,6 +296,98 @@ margin:auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+/* ---------- Navbar ---------- */
+.logout-btn { cursor: pointer; }
+
+/* ---------- Forms ---------- */
+.input-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #f6f6f6;
+    min-height: 100px;
+    resize: vertical;
+    transition: border-color 0.5s ease;
+}
+.input-group textarea:focus {
+    outline: none;
+    border-color: #FA739D;
+    box-shadow: 0 0 0 3px rgba(250, 115, 157, 0.1);
+}
+button.btn-primary {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+}
+.hint { font-size: 14px; margin: 0; }
+
+/* ---------- Location picker ---------- */
+#pick-map {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+/* ---------- Profile ---------- */
+.profile-hero, .profile-pins {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.profile-card {
+    background-color: #F4E7E1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+}
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #FA739D, #FFAAB8);
+    color: #ffffff;
+    font-family: Alice, serif;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+.profile-meta { margin: 5px 0; }
+.profile-pins .post { text-align: left; }
+.post-date { font-size: 13px; opacity: 0.8; }
+.delete-btn {
+    margin-top: 12px;
+    background: none;
+    border: 1px solid #FA739D;
+    color: #FA739D;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+}
+.delete-btn:hover { background: #FA739D; color: #ffffff; }
+.heart-marker {
+  background: none;
+  border: none;
+  text-align: center;
+}
+.heart-marker i {
+  color: #FA739D;
+  font-size: 30px;
+  line-height: 32px;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.35));
+  transition: transform 0.2s;
+}
+.heart-marker:hover i {
+  transform: scale(1.2);
+}
 
 
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body> 
     <header>
@@ -51,9 +52,12 @@
                 <!--location -->
                 <div class="input-group">
                     <label for="post-location">Location</label>
-                    <input type="text" id="post-location" required>
+                    <input type="text" id="post-location" >
+                    <button type="button" id="find-location" class="btn-primary">Find on map</button>
                 </div>
+                <div id="pick-map"></div>
                 <!--submit button -->
+                <p id="post-msg" class="auth-msg"></p>
                 <button type="submit" class="btn-primary">Share Kindness</button>
             </form>
         </section>
@@ -71,6 +75,10 @@
         </ul>
     </footer>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabaseClient.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/addpost.js"></script>
 </body>
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile - KindMap</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <h1 class="logo"><a href="../index.html"><i class="fas fa-map"></i>KindMap</a></h1>
+
+            <input type="checkbox" id="menu-toggle" hidden>
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="addpost.html">Share kindness</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-hero">
+            <div class="profile-card">
+                <div class="avatar" id="profile-avatar"></div>
+                <h2 id="profile-name">Loading...</h2>
+                <p class="profile-meta" id="profile-email"></p>
+                <p class="profile-meta">Member since <span id="profile-since"></span></p>
+                <p class="profile-meta"><span id="profile-count">0</span> kind pins shared</p>
+            </div>
+        </section>
+
+        <section class="profile-pins">
+            <h2 class="section-title">My kind pins</h2>
+            <div id="posts"></div>
+            <a href="addpost.html" class="btn-primary">Share your kindness</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with love for people who believe small actions can change the world.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/supabaseClient.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>
